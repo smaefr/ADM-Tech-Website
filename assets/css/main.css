@@ -29,16 +29,21 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-    background-image: url('../../images/adm_logo.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
 }
 
 @media screen and (max-width: 736px) {
-    body {
-        background-size: contain;
+    #header {
+        padding: 4em 3em 0 3em;
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #header {
+        padding: 4em 2em 0 2em;
     }
 }
 
@@ -2930,16 +2935,18 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 9em 0 9em 0;
-		background-color: #4686a0;
+		padding: 9em 0 0 0;
+		background-color: #000;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed;
-		background-image: url("../../images/adm_logo.png");
+		background-image: url('../../images/adm_logo.png');
 		background-position: center center;
-		background-size: cover;
+		background-size: contain;
+		background-repeat: no-repeat;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
+		margin-bottom: 0;
 	}
 
 		#header a {
