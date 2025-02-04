@@ -3612,3 +3612,36 @@ input, select, textarea {
 #header .actions:after {
     display: none;  /* Remove the line under the buttons */
 }
+
+#three .row.gtr-150 {
+    margin: 0 -2em;
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+}
+
+#three .col-3.col-12-medium {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 1em;
+    flex: 1;
+}
+
+#three .col-3.col-12-medium:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 980px) {
+    #three .row.gtr-150 {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    #three .col-3.col-12-medium {
+        margin: 1em 0;
+    }
+}
