@@ -3654,10 +3654,8 @@ input, select, textarea {
 }
 
 #two {
-    background-attachment: fixed, fixed, fixed;
-    background-image: url('images/overlay2.png'), url('images/overlay4.svg'), linear-gradient(45deg, #e37682, #5f4d93 50%, #4686a0 95%);
-    background-position: top left, center center, center center;
-    background-size: auto, cover, cover;
+    background-color: #000 !important;
+    background-image: none;
     color: rgba(255, 255, 255, 0.75);
 }
 
