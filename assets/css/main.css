@@ -3652,3 +3652,21 @@ input, select, textarea {
         margin: 1em 0;
     }
 }
+
+#two {
+    background-color: #000 !important;
+    background-image: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#two h2, #two p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#two .icon.major:before {
+    color: #ffffff;
+}
+
+#two .major-icons .icon {
+    border-color: rgba(255, 255, 255, 0.25);
+}
