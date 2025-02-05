@@ -3652,3 +3652,23 @@ input, select, textarea {
         margin: 1em 0;
     }
 }
+
+#two {
+    background-attachment: fixed, fixed, fixed;
+    background-image: url('images/overlay2.png'), url('images/overlay4.svg'), linear-gradient(45deg, #e37682, #5f4d93 50%, #4686a0 95%);
+    background-position: top left, center center, center center;
+    background-size: auto, cover, cover;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#two h2, #two p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#two .icon.major:before {
+    color: #ffffff;
+}
+
+#two .major-icons .icon {
+    border-color: rgba(255, 255, 255, 0.25);
+}
