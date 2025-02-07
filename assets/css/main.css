@@ -36,14 +36,14 @@ body {
 
 @media screen and (max-width: 736px) {
     #header {
-        padding: 4em 3em 0 3em;
+        padding: 6em 3em 4em 3em;
         background-attachment: scroll;
     }
 }
 
 @media screen and (max-width: 480px) {
     #header {
-        padding: 4em 2em 0 2em;
+        padding: 4em 2em 3em 2em;
     }
 }
 
@@ -2935,7 +2935,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		padding: 9em 0 0 0;
+		padding: 12em 0 8em 0;  /* Increased from 9em to 12em top padding and added bottom padding */
 		background-color: #000;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed;
@@ -3309,7 +3309,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 6em 0 6em 0 ;
+				padding: 10em 0 6em 0;
 			}
 
 	}
@@ -3353,7 +3353,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 5em 0 5em 0 ;
+				padding: 8em 0 5em 0 ;
 				background-attachment: scroll;
 			}
 
@@ -3395,7 +3395,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 8em 3em 8em 3em ;
+				padding: 6em 3em 4em 3em ;
 			}
 
 		/* Footer */
@@ -3523,7 +3523,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 4em 2em 4em 2em ;
+				padding: 4em 2em 3em 2em ;
 			}
 
 				#header br {
