@@ -12,6 +12,9 @@ This is the official repository for the ADM Technology company website. The site
 
 ```
 /
+├── index.html
+├── images/
+│    └── adm_logo.png
 ├── assets/
 │   ├── css/
 │   │   ├── main.css
