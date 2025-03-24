@@ -96,7 +96,7 @@
 						// Get the turnstile token
 						const token = turnstile.getResponse();
 						if (!token) {
-							statusElement.textContent = 'Please complete the security check';
+							statusElement.textContent = 'Please complete the turnstile challenge';
 							statusElement.style.color = 'red';
 							statusElement.style.display = 'block';
 							submitButton.value = 'Send Message';
