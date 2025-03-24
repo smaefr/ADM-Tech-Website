@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 	</head>
 	<body class="is-preload">
 
@@ -42,6 +43,9 @@
 									</div>
 									<div class="col-12">
 										<textarea name="message" id="message" placeholder="Your Message" rows="6" required></textarea>
+									</div>
+									<div class="col-12" style="display: flex; justify-content: center;">
+										<div class="cf-turnstile" data-sitekey="0x4AAAAAABCV5yB6iTtcZa7f" data-theme="light"></div>
 									</div>
 									<div class="col-12">
 										<ul class="actions special">
@@ -88,6 +92,20 @@
 					try {
 						const formData = new FormData(form);
 						const data = Object.fromEntries(formData.entries());
+						
+						// Get the turnstile token
+						const token = turnstile.getResponse();
+						if (!token) {
+							statusElement.textContent = 'Please complete the security check';
+							statusElement.style.color = 'red';
+							statusElement.style.display = 'block';
+							submitButton.value = 'Send Message';
+							submitButton.disabled = false;
+							return;
+						}
+						
+						// Add token to the request
+						data.cfTurnstileResponse = token;
 						
 						const response = await fetch('https://email-api.admtech.us/api/contact', {
 							method: 'POST',
