@@ -1,0 +1,14 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Sitemap location
+# Sitemap: https://admtech.org/sitemap.xml
+
+# Prevent caching of assets directory
+Disallow: /assets/js/
+Disallow: /assets/css/
+
+# Allow crawling of important pages
+Allow: /index.html
+Allow: /contact/ 
