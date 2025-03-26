@@ -47,4 +47,4 @@ To run the site locally, simply serve the files using any HTTP server. No build 
 
 ## License
 
-All rights reserved. ADM Technology © 2024
+See the LICENSE file
