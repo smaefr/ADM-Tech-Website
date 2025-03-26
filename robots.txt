@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-# Sitemap: https://admtech.org/sitemap.xml
+Sitemap: https://admtech.org/sitemap.xml
 
 # Prevent caching of assets directory
 Disallow: /assets/js/
