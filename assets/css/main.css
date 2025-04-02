@@ -3618,6 +3618,25 @@ input, select, textarea {
     background-color: rgba(255, 255, 255, 0.125);
 }
 
+#five {
+    background-color: #000 !important;
+    background-image: none;
+    color: #fff;
+}
+
+#five h2, #five p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#five .button {
+    border-color: #fff;
+    color: #fff;
+}
+
+#five .button:hover {
+    background-color: rgba(255, 255, 255, 0.125);
+}
+
 #header .actions:after {
     display: none;  /* Remove the line under the buttons */
 }
