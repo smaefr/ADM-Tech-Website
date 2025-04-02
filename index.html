@@ -11,76 +11,75 @@
 		<link rel="preconnect" href="//fonts.bunny.net" crossorigin />
 		<link rel="manifest" href="/manifest.json" />
 		<meta name="theme-color" content="#000000" />
-		<link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
 		<link rel="preload" href="assets/css/main.css" as="style" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="preload" href="assets/css/noscript.css" as="style" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/animations.css" />
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
-			<section id="header" class="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800 text-white">
-				<div class="inner container mx-auto px-4 text-center">
-					<span class="icon solid major fa-cloud inline-block text-6xl mb-8 opacity-0 animate-scale-in"></span>
-					<h1 class="text-5xl font-bold mb-4 opacity-0 animate-fade-in-up delay-100"><strong>ADM Technology</strong></h1>
-					<p class="text-xl mb-8 opacity-0 animate-fade-in-up delay-200">Providing innovative technology solutions for everyone.</p>
-					<ul class="flex justify-center gap-4 opacity-0 animate-fade-in-up delay-300">
-						<li><a href="#one" class="button scrolly bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">Learn More</a></li>
-						<li><a href="/contact/" class="button bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">Contact Us</a></li>
+			<section id="header">
+				<div class="inner">
+					<h1><strong>ADM Technology</strong></h1>
+					<p style="opacity: 1 !important; visibility: visible !important; display: block !important;">Providing innovative technology solutions for everyone.</p>
+					<ul class="actions special">
+						<li><a href="#one" class="button scrolly">Learn More</a></li>
+						<li><a href="/contact/" class="button">Contact Us</a></li>
 					</ul>
 				</div>
 			</section>
 
 		<!-- One -->
-			<section id="one" class="main style1" loading="lazy" style="content-visibility: auto;">
+			<section id="one" class="main style1 fade-in-section" loading="lazy" style="content-visibility: auto;">
 				<div class="container">
 					<div class="row gtr-150">
 						<div class="col-12-medium">
-							<header style="text-align: center; border-bottom: none;">
+							<header style="text-align: center; border-bottom: none;" class="fade-in-section">
 								<h2 style="font-size: 3em; border-bottom: none;">Mission Statement</h2>
-								<hr style="width: 50%; margin: 2em auto; border-width: 3px; border-color: black;" />
+								<hr class="fancy-divider" />
 							</header>
-							<p style="font-size: 2em; text-align: center; line-height: 1.4;">Our mission is to provide an innovative, secure, and cost-effective solution to every one of your technological needs.</p>
+							<p style="font-size: 2em; text-align: center; line-height: 1.4;" class="fade-in-section">Our mission is to provide an innovative, secure, and cost-effective solution to every one of your technological needs.</p>
 						</div>
 					</div>
 				</div>
 			</section>
 
 		<!-- Two -->
-			<section id="two" class="main style2" loading="lazy" style="content-visibility: auto;">
+			<section id="two" class="main style2 fade-in-section" loading="lazy" style="content-visibility: auto;">
 				<div class="container">
 					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
+						<div class="col-6 col-12-medium slide-in-left">
 							<ul class="major-icons">
-								<li><span class="icon solid style1 major fa-code"></span></li>
-								<li><span class="icon solid style2 major fa-bolt"></span></li>
-								<li><span class="icon solid style3 major fa-camera-retro"></span></li>
-								<li><span class="icon solid style4 major fa-cog"></span></li>
-								<li><span class="icon solid style5 major fa-desktop"></span></li>
-								<li><span class="icon solid style6 major fa-calendar"></span></li>
+								<li class="fade-in-section stagger-item zoom-effect" style="--item-index: 0"><span class="icon solid style1 major fa-code"></span></li>
+								<li class="fade-in-section stagger-item zoom-effect" style="--item-index: 1"><span class="icon solid style2 major fa-bolt"></span></li>
+								<li class="fade-in-section stagger-item zoom-effect" style="--item-index: 2"><span class="icon solid style3 major fa-camera-retro"></span></li>
+								<li class="fade-in-section stagger-item zoom-effect" style="--item-index: 3"><span class="icon solid style4 major fa-cog"></span></li>
+								<li class="fade-in-section stagger-item zoom-effect" style="--item-index: 4"><span class="icon solid style5 major fa-desktop"></span></li>
+								<li class="fade-in-section stagger-item zoom-effect" style="--item-index: 5"><span class="icon solid style6 major fa-calendar"></span></li>
 							</ul>
 						</div>
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2>All generations, every business.</h2>
+						<div class="col-6 col-12-medium slide-in-right">
+							<header class="major fade-in-section">
+								<h2 class="gradient-text">All generations, every business.</h2>
 							</header>
-							<p>Whether you're old or young, a small startup or a large corporation, ADM Technology has you covered.</p>
-							<p>We provide a wide range of services like simple computer questions, large scale secure network setup and installation, physical building security, and more.</p>
-							<p>If you need something done or have any questions, please feel free to reach out to us and we will be happy to provide you with a free quote and consultation.</p>
+							<p class="fade-in-section">Whether you're old or young, a small startup or a large corporation, ADM Technology has you covered.</p>
+							<p class="fade-in-section">We provide a wide range of services like simple computer questions, large scale secure network setup and installation, physical building security, and more.</p>
+							<p class="fade-in-section">If you need something done or have any questions, please feel free to reach out to us and we will be happy to provide you with a free quote and consultation.</p>
 						</div>
 					</div>
 				</div>
 			</section>
 
 		<!-- Four -->
-			<section id="four" class="main style2 special" loading="lazy" style="content-visibility: auto;">
+			<section id="four" class="main style2 special fade-in-section" loading="lazy" style="content-visibility: auto;">
 				<div class="container">
-					<header class="major">
+					<header class="major fade-in-section">
 						<h2>Ready to get started?</h2>
 					</header>
-					<p>Reach out to us for a free consultation.</p>
-					<ul class="actions special">
+					<p class="fade-in-section">Reach out to us for a free consultation.</p>
+					<ul class="actions special fade-in-section">
 						<li><a href="/contact/" class="button wide">Contact</a></li>
 					</ul>
 				</div>
@@ -94,8 +93,26 @@
 			</section>
 
 		<!-- Scripts -->
-			<script defer src="assets/js/jquery.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-			<script defer src="assets/js/jquery.scrolly.min.js" integrity="sha384-wHbYC8x1+lHf9pV6b2UWtXqP6zp5sKnKCXkELFhQP3t8PFxYb2oBF9hB9Ic2lhXE" crossorigin="anonymous"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script>
+				// If jQuery fails to load from local file, load from CDN
+				if (typeof jQuery === 'undefined') {
+					console.log('Local jQuery failed to load, using CDN');
+					var script = document.createElement('script');
+					script.src = 'https://code.jquery.com/jquery-3.6.4.min.js';
+					document.head.appendChild(script);
+				}
+				
+				// Fallback in case jQuery fails to load
+				window.addEventListener('DOMContentLoaded', function() {
+					// Manual animation fallback
+					setTimeout(function() {
+						document.body.classList.remove('is-preload');
+						console.log('Fallback animation triggered');
+					}, 500);
+				});
+			</script>
+			<script defer src="assets/js/jquery.scrolly.min.js"></script>
 			<script defer src="assets/js/browser.min.js"></script>
 			<script defer src="assets/js/breakpoints.min.js"></script>
 			<script defer src="assets/js/util.js"></script>
@@ -103,6 +120,32 @@
 			
 			<script>
 				document.getElementById('copyright-year').textContent = new Date().getFullYear();
+			</script>
+			
+			<script>
+				// Enhanced Intersection Observer for fade-in animations
+				document.addEventListener('DOMContentLoaded', function() {
+					const observerOptions = {
+						root: null,
+						rootMargin: '0px',
+						threshold: 0.15
+					};
+					
+					const observer = new IntersectionObserver(function(entries, observer) {
+						entries.forEach(entry => {
+							if (entry.isIntersecting) {
+								entry.target.classList.add('is-visible');
+								// Once the animation is triggered, we can stop observing for better performance
+								observer.unobserve(entry.target);
+							}
+						});
+					}, observerOptions);
+					
+					// Observe all animated sections
+					document.querySelectorAll('.fade-in-section, .slide-in-left, .slide-in-right').forEach(section => {
+						observer.observe(section);
+					});
+				});
 			</script>
 
 	</body>

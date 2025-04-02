@@ -23,8 +23,17 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
+				console.log('is-preload class removed');
 			}, 100);
 		});
+
+		// Add a fallback to remove is-preload class if window.load doesn't fire
+		setTimeout(function() {
+			if ($body.hasClass('is-preload')) {
+				console.log('Fallback: removing is-preload class');
+				$body.removeClass('is-preload');
+			}
+		}, 1500);
 
 	// Scrolly.
 		$('.scrolly').scrolly();

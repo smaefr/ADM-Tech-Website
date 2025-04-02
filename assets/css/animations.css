@@ -1,0 +1,68 @@
+/* Enhanced animation styles */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);
+    will-change: opacity, transform;
+}
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.stagger-item {
+    transition-delay: calc(var(--item-index) * 150ms);
+}
+
+/* Zoom effect for icons */
+.zoom-effect {
+    transition: transform 0.5s ease-out;
+}
+.zoom-effect:hover {
+    transform: scale(1.1);
+}
+
+/* Gradient text */
+.gradient-text {
+    background: linear-gradient(135deg, #3494E6 0%, #EC6EAD 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.2));
+}
+
+/* Improved button styles */
+.button.primary-gradient {
+    background: linear-gradient(135deg, #3494E6 0%, #EC6EAD 100%);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.button.primary-gradient:hover {
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Better section transitions */
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.slide-in-left.is-visible,
+.slide-in-right.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Enhanced divider */
+.fancy-divider {
+    height: 5px;
+    background: black;
+    border: none;
+    margin: 2em auto;
+    width: 50%;
+} 
